@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leticia — Fotografia & Vídeo</title>
+  <meta name="description" content="Leticia — Fotógrafa e videomaker. Casamentos, ensaios, eventos e produção de conteúdo audiovisual com um olhar autoral em preto e branco.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Favicon simples em SVG (letra L) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-size='60' font-family='Georgia,serif' fill='%23f5f4f0' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+
+  <!-- Fontes: Fraunces (serifada, com personalidade) para títulos + Inter para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS: biblioteca leve para animações de scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#topo" class="nav__logo">Letícia</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#contato" class="nav__cta">Fale comigo</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="topo">
+    <div class="hero__media">
+      <img
+        src="https://picsum.photos/seed/leticia-hero/1800/1200"
+        alt="Fotografia autoral de Leticia"
+        class="hero__img"
+        id="heroImg"
+        fetchpriority="high">
+      <div class="hero__grain"></div>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-aos="fade-up">Fotografia &amp; Vídeo</p>
+      <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">Letícia</h1>
+      <p class="hero__tagline" data-aos="fade-up" data-aos-delay="200">
+        Transformando momentos em memórias inesquecíveis.
+      </p>
+      <a href="#contato" class="btn btn--outline hero__btn" data-aos="fade-up" data-aos-delay="300">
+        Entrar em Contato
+      </a>
+    </div>
+
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+      <span></span>
+      Rolar
+    </a>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__grid">
+      <div class="sobre__img-wrap" data-aos="fade-right">
+        <img src="https://picsum.photos/seed/leticia-retrato/900/1100" alt="Retrato de Leticia" class="sobre__img">
+        <span class="sobre__frame"></span>
+      </div>
+
+      <div class="sobre__text" data-aos="fade-left">
+        <p class="eyebrow">Sobre</p>
+        <h2 class="section-title">Um olhar atento a cada detalhe.</h2>
+        <p class="sobre__lead">
+          Sou Letícia, fotógrafa e videomaker apaixonada por transformar instantes
+          em narrativas visuais que duram para sempre.
+        </p>
+        <p>
+          Há anos me dedico a registrar histórias reais — casamentos, ensaios,
+          aniversários e eventos — sempre buscando a luz certa, o gesto certo
+          e a emoção verdadeira por trás de cada clique. Cada projeto é tratado
+          com cuidado autoral, do primeiro contato à entrega final.
+        </p>
+        <p>
+          Acredito que uma boa fotografia não apenas registra, mas emociona.
+          É esse o compromisso que carrego em cada trabalho.
+        </p>
+
+        <div class="sobre__stats">
+          <div class="stat">
+            <span class="stat__num">150+</span>
+            <span class="stat__label">Projetos entregues</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">8</span>
+            <span class="stat__label">Anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Dedicação autoral</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFÓLIO ===================== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio__head" data-aos="fade-up">
+        <p class="eyebrow">Portfólio</p>
+        <h2 class="section-title">Trabalhos selecionados</h2>
+      </div>
+
+      <div class="portfolio__filters" data-aos="fade-up">
+        <button class="filter is-active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="casamentos">Casamentos</button>
+        <button class="filter" data-filter="ensaios">Ensaios</button>
+        <button class="filter" data-filter="eventos">Eventos</button>
+        <button class="filter" data-filter="aniversarios">Aniversários</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+        <!-- Itens gerados também via JS-friendly, mas já deixados fixos aqui para SEO -->
+        <figure class="item" data-category="casamentos" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/casamento1/900/1100" alt="Casamento — cerimônia ao entardecer" loading="lazy">
+          <figcaption><span>N°01</span> Casamento — Entardecer</figcaption>
+        </figure>
+
+        <figure class="item" data-category="ensaios" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://picsum.photos/seed/ensaio1/900/700" alt="Ensaio fotográfico em estúdio" loading="lazy">
+          <figcaption><span>N°02</span> Ensaio — Estúdio</figcaption>
+        </figure>
+
+        <figure class="item item--tall" data-category="eventos" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/evento1/900/1300" alt="Cobertura de evento corporativo" loading="lazy">
+          <figcaption><span>N°03</span> Evento Corporativo</figcaption>
+        </figure>
+
+        <figure class="item" data-category="aniversarios" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/aniversario1/900/900" alt="Festa de aniversário" loading="lazy">
+          <figcaption><span>N°04</span> Aniversário — 15 anos</figcaption>
+        </figure>
+
+        <figure class="item" data-category="casamentos" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://picsum.photos/seed/casamento2/900/1200" alt="Casamento — making of da noiva" loading="lazy">
+          <figcaption><span>N°05</span> Casamento — Making Of</figcaption>
+        </figure>
+
+        <figure class="item" data-category="ensaios" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/ensaio2/900/1000" alt="Ensaio externo" loading="lazy">
+          <figcaption><span>N°06</span> Ensaio — Externo</figcaption>
+        </figure>
+
+        <figure class="item item--wide" data-category="eventos" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/evento2/1300/900" alt="Evento ao ar livre" loading="lazy">
+          <figcaption><span>N°07</span> Evento — Ao Ar Livre</figcaption>
+        </figure>
+
+        <figure class="item" data-category="aniversarios" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://picsum.photos/seed/aniversario2/900/1100" alt="Festa infantil" loading="lazy">
+          <figcaption><span>N°08</span> Aniversário Infantil</figcaption>
+        </figure>
+
+        <figure class="item" data-category="casamentos" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/casamento3/900/1150" alt="Casamento — festa" loading="lazy">
+          <figcaption><span>N°09</span> Casamento — Festa</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIGHTBOX (tela cheia) ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da imagem em tela cheia">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Imagem anterior">&#8249;</button>
+    <img src="" alt="" class="lightbox__img" id="lightboxImg">
+    <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Próxima imagem">&#8250;</button>
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="servicos__head" data-aos="fade-up">
+        <p class="eyebrow">Serviços</p>
+        <h2 class="section-title">Como posso te ajudar</h2>
+      </div>
+
+      <div class="servicos__grid">
+        <div class="servico" data-aos="fade-up">
+          <span class="servico__num">01</span>
+          <h3>Ensaios Fotográficos</h3>
+          <p>Sessões individuais, casais ou família, com direção de poses leve e natural.</p>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="50">
+          <span class="servico__num">02</span>
+          <h3>Casamentos</h3>
+          <p>Cobertura completa do grande dia, do making of à festa, com olhar documental.</p>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="100">
+          <span class="servico__num">03</span>
+          <h3>Eventos</h3>
+          <p>Registro de eventos corporativos e sociais com agilidade e discrição.</p>
+        </div>
+        <div class="servico" data-aos="fade-up">
+          <span class="servico__num">04</span>
+          <h3>Aniversários</h3>
+          <p>Festas e comemorações registradas com espontaneidade e emoção.</p>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="50">
+          <span class="servico__num">05</span>
+          <h3>Vídeos Institucionais</h3>
+          <p>Vídeos para marcas e empresas que querem contar sua história com autenticidade.</p>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="100">
+          <span class="servico__num">06</span>
+          <h3>Produção de Conteúdo</h3>
+          <p>Fotos e vídeos para redes sociais, com identidade visual consistente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato__head" data-aos="fade-up">
+        <p class="eyebrow">Contato</p>
+        <h2 class="section-title">Vamos criar algo juntos?</h2>
+        <p class="contato__lead">
+          Conte um pouco sobre o seu projeto e responderei o quanto antes.
+        </p>
+      </div>
+
+      <div class="contato__buttons" data-aos="fade-up">
+        <a href="https://wa.me/5521993967944" target="_blank" rel="noopener" class="contato__btn">
+          <span class="contato__btn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 22c-1.653 0-3.278-.417-4.71-1.207L2 22l1.264-5.212A9.95 9.95 0 0 1 2.05 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm0-18.5c-4.687 0-8.5 3.813-8.5 8.5 0 1.62.454 3.174 1.315 4.517l.212.331-.75 3.093 3.17-.83.32.19A8.47 8.47 0 0 0 12.05 20.5c4.687 0 8.5-3.813 8.5-8.5s-3.813-8.5-8.5-8.5z"/></svg>
+          </span>
+          <span>
+            <strong>WhatsApp</strong>
+            <small>(21) 99396-7944</small>
+          </span>
+        </a>
+
+        <a href="https://instagram.com/Carol.fotografia" target="_blank" rel="noopener" class="contato__btn">
+          <span class="contato__btn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465a4.9 4.9 0 0 1 1.772 1.153 4.9 4.9 0 0 1 1.153 1.772c.248.637.415 1.363.465 2.428.05 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122c-.05 1.065-.217 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772 4.9 4.9 0 0 1-1.772 1.153c-.637.248-1.363.415-2.428.465-1.066.05-1.405.06-4.122.06s-3.056-.01-4.122-.06c-1.065-.05-1.79-.217-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.01 15.056 2 14.717 2 12s.01-3.056.06-4.122c.05-1.065.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45.525C6.088.277 6.813.11 7.878.06 8.944.01 9.283 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0z"/></svg>
+          </span>
+          <span>
+            <strong>Instagram</strong>
+            <small>@Carol.fotografia</small>
+          </span>
+        </a>
+
+        <a href="https://tiktok.com/@Carol.fotografiaa" target="_blank" rel="noopener" class="contato__btn">
+          <span class="contato__btn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 1 1-2.59-2.591 2.6 2.6 0 0 1 .74.111V9.756a5.673 5.673 0 0 0-.74-.048A5.65 5.65 0 0 0 4.5 21.5a5.65 5.65 0 0 0 9.575-4.145V9.783a7.66 7.66 0 0 0 4.525 1.457V8.16a4.278 4.278 0 0 1-2-2.34z"/></svg>
+          </span>
+          <span>
+            <strong>TikTok</strong>
+            <small>@Carol.fotografiaa</small>
+          </span>
+        </a>
+      </div>
+
+      <div class="contato__form-wrap" data-aos="fade-up">
+        <form class="contato__form" id="contatoForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--solid">Enviar mensagem</button>
+          <p class="field__hint">Ao enviar, sua mensagem abrirá no WhatsApp para envio direto.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#topo" class="nav__logo">Letícia</a>
+
+      <div class="footer__socials">
+        <a href="https://wa.me/5521993967944" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/Carol.fotografia" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@Carol.fotografiaa" target="_blank" rel="noopener">TikTok</a>
+      </div>
+
+      <p class="footer__copy">&copy; <span id="year"></span> Letícia Fotografia &amp; Vídeo. Todos os direitos reservados.</p>
+
+      <a href="#topo" class="footer__top" aria-label="Voltar ao topo">&uarr;</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
